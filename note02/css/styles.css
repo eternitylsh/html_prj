@@ -1,0 +1,19 @@
+h1 {
+    font-family: 'Hi Melody', cursive; 
+    font-size: 3em
+}
+
+button {
+    font-family: 'Orbit', sans-serif; 
+    width: 100px;
+}
+
+h2 {
+    font-family: 'Orbit', sans-serif; 
+    font-style: oblique;
+}
+
+.lorem {
+    color: saddlebrown;
+    font-size: 1.2em;
+}

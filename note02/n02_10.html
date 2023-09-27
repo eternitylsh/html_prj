@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>복합 선택자</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--    
+        div p : div 안에 p태그만 잡힘. 더 밖에 div가 있다면 해당됨.
+        div+p : div와 이웃한 p 즉 같은 자식의 p만 잡힌다. 그 안의 자식이나 상위는 못함.
+        div+span : 말할 것도 없을 듯..
+        #hello > p : 손자 신경쓰지말고 바로 자식까지..
+    -->
+    <style>
+        div p {
+            color: blueviolet;
+        }
+        div+span {
+            color: brown;
+        }
+        
+        #hello > p {
+            color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>복합 선택자</h1>
+    </div>
+    <div>
+        <hr>
+    </div>
+    <div>
+        <h2>Heading</h2>
+        <div id="hello">
+           안녕하세요
+            <p>child 1</p>
+            <p>child 2</p>
+            <div0653>
+               반갑습니다.
+                <p>grandchild</p>
+            </div>
+        </div>
+        <span>neighborhood child</span>
+    </div>
+    <footer>
+        <p style="text-align: center">
+            <button type="button" onclick="location.href='index.html'" value="홈으로" >HOME</button>
+        </p>
+    </footer>
+</body>
+
+</html>

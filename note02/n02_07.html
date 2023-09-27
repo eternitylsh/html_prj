@@ -1,27 +1,40 @@
-# template 0926
-# 다만.. 여기서 css하고 분리해서 form templete 작성. 그렇기에 css/styles.css 필수!
-# 여기서 google font : Hi melody, Orbit가 쓰임.
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>document</title>
+    <title>유형선택자</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        h3 {
+            color: cornflowerblue
+        }
+    </style>
 </head>
 
 <body>
     <div>
-        <h1>title</h1>
+        <h1>유형선택자</h1>
     </div>
-    <footer>
+    <div>
         <hr>
+    </div>
+    <div>
+        <h3>유형선택자는 이미 배운 선택자입니다. 특정 태그를 지정해 작성하는 방식이죠. 타입 셀렉터라고도 말합니다.</h3>
+    </div>
+    <pre>
+        > style 적용된 내용은 이하..
+        
+        h3 {
+            color: cornflowerblue
+        }
+    </pre>
+    <footer>
         <p style="text-align: center">
             <button type="button" onclick="location.href='index.html'" value="홈으로" >HOME</button>
         </p>
@@ -29,22 +42,3 @@
 </body>
 
 </html>
-
-
-
-=================================================================
-
-styles.css base form
-
-h1 {
-    border-bottom: 3px solid black;
-    padding: 26px;
-    
-    font-family: 'Hi Melody', cursive; 
-    font-size: 3em
-}
-
-button {
-    font-family: 'Orbit', sans-serif; 
-    width: 100px;
-}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>여우명함의_나만의_양식</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <h1 style="font-family: 'Hi Melody', cursive; font-size: 3em">여우명함의 나만의 양식</h1>
+    </div>
+    <div>
+        <hr>
+    </div>
+    <div>
+       <form action="./n02_q1_1.html">
+        <fieldset>
+            <h1>My Form</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Vulpes_vulpes_laying_in_snow.jpg/1200px-Vulpes_vulpes_laying_in_snow.jpg" alt="" width="40%">
+            <p><label for="username">Username : </label><input type="text" id="username" maxlength="20" pattern="(\d|[a-z]|[A-Z]|[가-힣])+" required title="특수기호는 들어갈 수 없습니다."></p>
+            <p><label for="pw">Password : </label><input type="password" id="pw" required></p>
+            <p>
+                <input type="checkbox" required>
+                <span>I'm not a robot.</span>
+            </p>
+            <p>
+                <input type="submit" value="sign in">
+                <input type="reset" value="reset" >
+            </p>
+        </fieldset>
+       </form>
+    </div>
+    <footer>
+        <p style="text-align: center">
+            <button type="button" onclick="location.href='index.html'" value="홈으로" style="font-family: 'Orbit', sans-serif; width: 100px;">HOME</button>
+        </p>
+    </footer>
+</body>
+
+</html>

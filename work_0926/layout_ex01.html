@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>레이아웃에관해서</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <style>
+        * {
+            text-align: center;
+            vertical-align: center;
+        }
+        body {
+            height: 1050px;
+        }
+        header {
+            background-color: antiquewhite;
+            width: 100%;
+            height: 13%;
+        }
+        nav {
+            background-color: palevioletred;
+            width: 100%;
+            height: 8%;
+        }
+        aside {
+            width: 25%;
+            height: 26.176%;
+            background-color: cadetblue;
+        }
+        section {
+            top: 27.332%;
+            left: 25.4%;
+            position: absolute;
+            width: 55%;
+            height: 15%;
+            background-color: coral;
+        }
+        article {
+            top: 42%;
+            left: 25.4%;
+            position: absolute;
+            width: 55%;
+            height: 15%;
+            background-color: aquamarine;
+            vertical-align: middle;
+        }
+        adv {
+            position: absolute;
+            top: 27.332%;
+            left: 80.4%;
+            width: 18.85%;
+            height: 29.65%;
+            background-color: bisque;
+        }
+        footer {
+            background-color: gainsboro;
+            height: 10%;
+        }
+        
+        table {
+            text-align: center;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 style="font-family: 'Hi Melody', cursive; font-size: 3em">레이아웃 배치 확인</h1>
+        </div>
+        header
+        <div>
+            <hr>
+        </div>
+    </header>
+    <nav><span>nav</span></nav>
+    <aside>aside</aside>
+    <section>section</section>
+    <article>article</article>
+    <adv>adv</adv>
+    <footer>
+        <span>footer</span>
+    </footer>
+    <div><h3>대충 이런데.. 일단 표로는 아래와 같음.</h3></div>
+    <div style="width: 100%;">
+        <table style="margin-left: auto; margin-right: auto;">
+            <tr>
+                <th colspan="3" style="background-color: antiquewhite">header</th>
+            </tr>
+            <tr>
+                <th colspan="3" style="background-color: palevioletred;">nav</th>
+            </tr>
+            <tr>
+                <td rowspan="2" style="background-color: cadetblue;">aside</td>
+                <td style=" background-color: coral;">section</td>
+                <td rowspan="2" style="background-color: bisque;">adv</td>
+            </tr>
+            <tr>
+                <td style="background-color: aquamarine;">article</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="background-color: gainsboro;">footer</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <p style="text-align: center">
+            <button type="button" onclick="location.href='index.html'" value="홈으로" style="font-family: 'Orbit', sans-serif; width: 100px;">HOME</button>
+        </p>
+</body>
+
+</html>
