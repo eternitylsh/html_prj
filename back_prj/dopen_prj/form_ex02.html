@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>입력폼예시</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div>
+        <h1>입력폼예시</h1>
+    </div>
+    <div>
+        <form method="get">
+            <fieldset>
+                <label for="name">이름</label>
+                <input type="text" id="name" required>
+                <br>
+                <span>성별</span>
+                <input type="radio" name="gen" required>
+                <label for="">남자</label>
+                <input type="radio" name="gen">
+                <label for="">여자</label>
+                <br>
+                <input type="submit" value="가입">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <!-- <select name="U_food" id="Uf_sel" multiple="multiple">
+            <option value="떡뽂이">떡뽂이</option>
+            <option value="짜장면">짜장면</option>
+            <option value="오뎅">오뎅</option>
+            <option value="짬뽕">짬뽕</option>
+        </select> -->
+        <!-- 위 보다.. 좀 더.. -->
+        <select name="words" id="words">
+            <optgroup label="HTML5">
+                <option value="Multimedia">Multimedia</option>
+                <option value="Connectivity">Connectivity</option>
+                <option value="Divice_Access">Divice Access</option>
+            </optgroup>
+            <optgroup label="CSS3">
+                <option value="Animation">Animation</option>
+                <option value="3D_transform">3D transform</option>
+                <option value="Design">Design</option>
+            </optgroup>
+        </select>
+    </div>
+    <footer>
+        <hr>
+        <p style="text-align: center">
+            <button type="button" onclick="location.href='index.html'" value="홈으로" >HOME</button>
+        </p>
+    </footer>
+</body>
+
+</html>

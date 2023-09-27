@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>css연습_01</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        #header {
+            width: 800px; margin: 0 auto;
+            background: red;
+        }
+
+        #wrap {
+            width: 800px; margin: 0 auto;
+            overflow: hidden;
+        }
+        #aside {
+            width: 600px; float: left;
+            background: cyan;
+        }
+        #content {
+            width: 200px; float: left;
+            background: green;
+        }
+
+        .select {
+            color: brown;
+        }
+
+        .item {
+            background-color: ghostwhite;
+        }
+        
+        li.select {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>css연습 01</h1>
+        <div id="header">
+            <h2>#header 태그</h2>
+        </div>
+    </div>
+    <div id="wrap">
+        <div id="aside">#aside 태그</div>
+        <div id="content"><h2>#content 태그</h2></div>
+    </div>
+
+    <ul>
+        <li class="select item">사과</li>
+        <li>바나나</li>
+        <li class="select">수박</li>
+    </ul>
+    <p class="select">생과</p>
+    <footer>
+        <hr>
+        <p style="text-align: center">
+            <button type="button" onclick="location.href='index.html'" value="홈으로" >HOME</button>
+        </p>
+    </footer>
+</body>
+
+</html>
