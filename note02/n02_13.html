@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>p162_플렉스교차축</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        html, body { height: 100%; } /* CSS같은 대상이면 이렇게.. */
+        #ex { 
+            display: flex; /* ex 9-2 */
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        #ex > div {
+            width: 300px;
+            height: 300px;
+            background-color: brown;
+        }
+        #ex > #second {
+            width: 250px;
+            height: 600px;
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>플렉스 교차축(align-items)</h1>
+    </div>
+    <div id="ex">
+        <div><h3>flex is good.</h3></div>
+        <div id="second"></div>
+        <div></div>
+    </div>
+    <footer>
+        <hr>
+        <p style="text-align: center">
+            <button type="button" onclick="location.href='index.html'" value="홈으로" >HOME</button>
+        </p>
+    </footer>
+</body>
+
+</html>

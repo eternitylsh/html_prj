@@ -17,9 +17,9 @@
 </head>
 
 <body>
-    <div>
+    <header>
         <h1>title</h1>
-    </div>
+    </header>
     <footer>
         <hr>
         <p style="text-align: center">
@@ -52,6 +52,15 @@ styles.css base form
     body {
         background-color: #a05ce9;
     }
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {

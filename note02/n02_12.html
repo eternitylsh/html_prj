@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>p155_플렉스</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <style>
+/*   #ex를 body 로 대응     */
+/*   html, body 폭이 애초 좁으면 아래 100프로 적용해도 안됨;;     */
+        html { height: 100%; }
+        body { height: 100%; }
+        #ex { 
+            display: flex; /* ex 9-2 */
+            justify-content: space-evenly;
+            align-items: stretch;
+            height: 100%;
+        }
+        #ex > div {
+            width: 200px;
+/*            height: 200px;*/
+            background: brown;
+            margin: 0px 20px
+        }
+        #ex > #second {
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>플렉스 만들기</h1>
+        <hr>
+    </div>
+    <div id="ex">
+        <div><h3>I'm Flex01</h3></div>
+        <div id="second"><p>중앙의 기준 녹색</p></div>
+        <div><p>우측에서..</p></div>
+    </div>
+    <footer>
+        <hr>
+        <p style="text-align: center">
+            <button type="button" onclick="location.href='index.html'" value="홈으로" >HOME</button>
+        </p>
+    </footer>
+</body>
+
+</html>
