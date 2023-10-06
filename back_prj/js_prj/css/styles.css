@@ -6,11 +6,6 @@ html, body {
     height: 100%;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
 h1 {
     border-bottom: 3px solid black;
     padding: 26px;
@@ -24,6 +19,22 @@ button {
     width: 100px;
 }
 
+header {
+    height: 20%;
+}
+
+content {
+    
+}
+
+footer {
+    height: 10%;
+}
+
+footer p {
+    text-align: center;
+}
+
 
 /*    class    */
 .h_scene { width: 100%; }
@@ -32,7 +43,9 @@ button {
 .t_row { display: table-row }
 .t_cell {
     display: table-cell;
-    box-sizing: border-box;
+}
+.non_bline { 
+    box-sizing: border-box; 
 /*        calc( target - border-width/2 ) 이렇게 해도 됨.    */
 /*        다만.. /2 할경우 전부 적용해야함.    */
 }
