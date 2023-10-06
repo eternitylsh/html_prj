@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>css_예시02</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <style type="text/css">
+        /*#ex > input[type="text"]{
+            background: red;
+        }
+        #ex > input[type="password"]{
+            background: blue;
+        }*/
+        #ex > input:enabled {
+            background-color: white;
+        }
+        #ex > input:disabled {
+            background-color: gray;
+        }
+        #ex > input:focus {
+            background-color: orange;
+        }
+        #header h2:hover{
+            color: red;
+        }
+        #section h3 {
+            color: orange;
+        }
+
+        #ex ul {
+            overflow: hidden;
+        }
+
+        #ex li {
+            list-style: none;
+            float: left; padding: 15px;
+        }
+        #ex li:first-child { border-radius: 10px 0 0 10px; }
+
+        #ex li:nth-child(2n) { background-color: #FF0003;  }
+        #ex li:nth-child(2n+1) { background-color: #800000;  }
+
+        #ex li:last-child { 
+            border-radius: 0 10px 10px 0;
+            background-color: #00ff00;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>css 예시02</h1>
+    </header>
+    <div id="ex">
+        <input type="text" name="" value="enabled">
+        <input type="password" name="disabled" disabled="disabled">
+        <div id="header"> 
+            <h2>Header</h2>
+            <h3>Header</h3>
+            <div>
+                <h2>Nav</h2>
+            </div>
+        </div>
+        <div id="section"> 
+            <h2>Section</h2>
+            <h3>Section</h3>
+            <ul>
+                <li>첫번째</li>
+                <li>두번째</li>
+                <li>세번째</li>
+                <li>네번째</li>
+                <li>다섯번째</li>
+                <li>여섯번째</li>
+                <li>일곱번째</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <hr>
+        <p style="text-align: center">
+            <button type="button" onclick="location.href='index.html'" value="홈으로" >HOME</button>
+        </p>
+    </footer>
+</body>
+
+</html>

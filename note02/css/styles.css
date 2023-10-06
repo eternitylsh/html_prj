@@ -16,7 +16,19 @@
     }
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
+    border-bottom: 3px solid black;
+    padding: 26px;
+    
     font-family: 'Hi Melody', cursive; 
     font-size: 3em
 }
@@ -24,11 +36,6 @@ h1 {
 button {
     font-family: 'Orbit', sans-serif; 
     width: 100px;
-}
-
-h2 {
-    font-family: 'Orbit', sans-serif; 
-    font-style: oblique;
 }
 
 .lorem {

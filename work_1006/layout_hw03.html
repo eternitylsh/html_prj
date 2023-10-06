@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>레이아웃배치과제1-2</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="../css/init.css">-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        body { margin: 0 }
+/*
+        #hw {  이 아이디 보유 태그div를 body로 친다. 
+        }
+        2023-10-16: notice - 앞으로 중첩없이 아래처럼 깔끔하게 해봅시다;;
+        이외 적용안되있어도 id입력한건 구분 및 가능성용.
+*/
+        #hw #menu {
+            height: 12%;
+            background-color: azure;
+            border: 3px solid cyan;
+        }
+        
+        #main #lmenu {
+            width: 15%;
+            background-color: cornsilk;
+            border: 3px solid #e98967;
+        }
+        
+        #content #article {
+            height: 85%;
+            background-color: burlywood;
+            border: 3px solid #858bee;
+        }
+        #content #comment  {
+            height: 15%;
+            background-color: darkgray;
+            border: 3px solid #451159;
+        }
+/*      footer의 경우 별도로;;  */
+        footer {
+            border-top: 2px solid black;
+            box-sizing: border-box;
+        }
+        
+/*    class    */
+        .h_scene { width: 100%; }
+        .f_scene { width: 100%; height: 100%; }
+        .table { display: table }
+        .t_row { display: table-row }
+        .t_cell {
+            display: table-cell;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>레이아웃 배치 과제 1-2</h1>
+    </header>
+    <div id="hw" class="f_scene table">
+        <div class="t_row">
+           <div id="menu" class="t_cell h_scene">global menu</div>
+        </div>
+        <div class="t_row">
+            <div id="main" class="f_scene table">
+                <div id="lmenu" class="t_cell">left menu</div>
+                <div id="content" class="f_scene table">
+                    <div class="t_row">
+                        <div id="article" class="t_cell h_scene">article</div>
+                    </div>
+                    <div class="t_row">
+                        <div id="comment" class="t_cell h_scene">comment</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <p style="text-align: center">
+            <button type="button" onclick="location.href='index.html'" value="홈으로" >HOME</button>
+        </p>
+    </footer>
+</body>
+
+</html>

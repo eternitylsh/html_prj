@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>레이아웃배치과제1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="../css/init.css">-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        body { margin: 0 }
+        #hw { /* 이 아이디 보유 태그div를 body로 친다. */
+            height: 100%; width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        #hw #menu {
+            background-color: azure;
+            border: 3px solid cyan;
+            height: 10%;
+        }
+        
+        #hw #main {
+            height: 91%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #main #lmenu {
+            width: 10%;
+            background-color: cornsilk;
+            border: 3px solid #e98967;
+        }
+        
+        #main #content {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #content #article {
+            background-color: burlywood;
+            height: 85%;
+            border: 3px solid #858bee;
+        }
+        #hw #comment  {
+            height: 15%;
+            background-color: darkgray;
+            border: 3px solid #b385ee;
+        }
+        footer {
+            border-top: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>레이아웃 배치 과제 1</h1>
+    </header>
+    <div id="hw">
+        <div id="menu">global menu</div>
+        <div id="main">
+            <div id="lmenu">left menu</div>
+            <div id="content">
+                <div id="article">article</div>
+                <div id="comment">comment</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p style="text-align: center">
+            <button type="button" onclick="location.href='index.html'" value="홈으로" >HOME</button>
+        </p>
+    </footer>
+</body>
+
+</html>
