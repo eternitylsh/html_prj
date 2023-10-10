@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>구조적_가상클래스</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="../css/init.css">-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        #ex p:first-child {
+            color: cadetblue;
+        }
+        #ex p:first-child:after {
+            content: "유성"; color: lightseagreen;
+        }
+        #ex p:before {
+            content: " ⭐ "
+        }
+        #ex p:nth-child(2) {
+            color: brown;
+            background-color: burlywood;
+            display: inline;
+        }
+        #ex p:nth-last-child(4):after {
+            content: " ⭐"
+        }
+        #ex p:nth-last-of-type(2):after {
+            content: " 메로나"
+        }
+        #ex p:last-child:after {
+            content: ". 감사합니다~"
+        }
+    </style>
+</head>
+
+<body class="table h_scene">
+    <header class="t_row">
+        <div class="t_cell">
+            <h1>구조적_가상클래스</h1>
+        </div>
+    </header>
+    <content class="t_row">
+        <div class="t_cell">
+            <div id="ex">
+                <p>나의 사랑</p>
+                <p>나의 가족</p>
+                <p>행복미래</p>
+                <span>----- 절취선 -----</span>
+                <p>올 때</p>
+                <p>이제 끝</p>
+            </div>
+        </div>
+    </content>
+    <footer class="t_row">
+       <div class="t_cell">
+        <hr>
+        <p>
+            <button type="button" onclick="location.href='index.html'" value="홈으로" >HOME</button>
+        </p>
+       </div>
+    </footer>
+</body>
+
+</html>

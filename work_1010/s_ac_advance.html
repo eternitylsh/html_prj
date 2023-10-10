@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>가상선택자응용</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="../css/init.css">-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        #ex li{
+            margin: auto 3px;
+            list-style: none;
+            float: left;
+            padding:  0 15px;
+        }
+        #ex li:after {
+            content: "|";
+            float: right;
+            color: #ccc;
+            margin-right: -17px;
+        }
+        #ex li:nth-last-of-type(1):after{
+            content: ""
+        }
+    </style>
+</head>
+
+<body class="table h_scene">
+    <header class="t_row">
+        <div class="t_cell">
+            <h1>가상선택자 응용 네비게이션 간단응용.</h1>
+        </div>
+    </header>
+    <content class="t_row">
+        <div class="t_cell">
+            <div id="ex">
+                <ul>
+                    <li>로그인</li>
+                    <li>회원가입</li>
+                    <li>마이페이지</li>
+                    <li>사이트맵</li>
+                    <li>고객센터</li>
+                </ul>
+            </div>
+        </div>
+    </content>
+    <footer class="t_row">
+       <div class="t_cell">
+        <hr>
+        <p>
+            <button type="button" onclick="location.href='index.html'" value="홈으로" >HOME</button>
+        </p>
+       </div>
+    </footer>
+</body>
+
+</html>

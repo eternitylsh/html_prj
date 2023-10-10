@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>flex_영화카드</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="../css/init.css">-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        header {
+            height: 15%;
+        }
+        #ex .contain {
+            margin: auto;
+            padding: 2% 0;
+            width: 50%;
+            height: 70%;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #ex .card{
+            margin: 10px auto;
+            border: 1px solid rgba(0,0,0,0.3);
+            box-shadow: 1px 3px 5px black;
+            width: 210px;
+            height: 200px;
+        }
+        #ex .imgs{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP0RDaQN1gpKqczmwUaOTKNzgY8fs94jCYHA&usqp=CAU);
+            
+            background-color: bisque;
+            background-size: contain;
+            height: 65%;
+        }
+        #ex img {
+            width: 100%;
+            height: 65%;
+            object-fit: contain;
+        }
+        #ex .card>div {
+            padding: 0 5px;
+        }
+    </style>
+</head>
+
+<body class="table h_scene">
+    <header class="t_row">
+        <div class="t_cell">
+            <h1 >flex 영화카드 만들기.</h1>
+        </div>
+    </header>
+    <content class="t_row">
+        <div class="t_cell">
+            <div id="ex">
+                <div class="contain">
+                    <div class="card">
+                        <div class="imgs">imgs</div>
+                        <div>1917 전쟁영화 1관</div>
+                    </div>
+                    <div class="card">
+                        <div class="imgs">imgs</div>
+                        <div>1917 전쟁영화 2관</div>
+                    </div>
+                    <div class="card">
+                        <img src="./res/raider.jpg" alt="img3">
+                        <div>TOMB RAIDER</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://min-inter.co.kr/wp-content/uploads/2023/06/%EC%B5%9C%EC%8B%A0-%EC%98%81%ED%99%94-%EC%88%9C%EC%9C%84-OTT%EC%96%B4%EB%94%94%EC%84%9C-%EB%B3%B4%EB%82%98-2023%EB%85%84-%EB%B0%95%EC%8A%A4%EC%98%A4%ED%94%BC%EC%8A%A4-1%EC%9B%94-6%EC%9B%94-%ED%95%9C%EA%B5%AD-%EC%99%B8%EA%B5%AD-%EA%B5%AC%EB%B6%84-%EC%B5%9C%EC%8B%A0-%EA%B0%9C%EB%B4%89-%EC%98%81%ED%99%94-2023.6.8-%EA%B8%B0%EC%A4%80.png" alt="img4">
+                        <div>OTT 안내</div>
+                    </div>
+                    <div class="card">
+                        <img src="./res/notice.jpg" alt="img5">
+                        <div>한국영화 결백은..</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.namu.wiki/i/NlNOVV6O0vTihv4ci0lJnpceT-9ljpyGqa8YDZSqhu_KEI8dK4OBbv_ZlCp_PkeQMuKbERZllVAmb9ThZQ4-Vg.webp" alt="img6">
+                        <div>최근주목하는세계급 !함정! 영화</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </content>
+    <footer class="t_row">
+       <div class="t_cell">
+        <hr>
+        <p>
+            <button type="button" onclick="location.href='index.html'" value="홈으로" >HOME</button>
+        </p>
+       </div>
+    </footer>
+</body>
+
+</html>

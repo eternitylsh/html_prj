@@ -33,6 +33,10 @@ h1 {
     font-size: 3em
 }
 
+footer div {
+    justify-content: center;
+}
+
 button {
     font-family: 'Orbit', sans-serif; 
     width: 100px;
