@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>실습예제02</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="../css/init.css">-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        :root {
+            --hamberger-bg: red;
+            --title-color: white;
+        }
+
+        header {
+            height: 10%;
+        }
+
+        #ex {
+            /* body 대응... */
+            height: 100%;
+            background-color: var(--hamberger-bg);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+
+        #ex span {
+            color: var(--title-color);
+        }
+        
+        #ex #ani_container {
+            display: inline-block;
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+
+        #ex input #ex .box {
+            width: 230px;
+            height: 20px;
+            background-color: white;
+            position: relative;
+            top: 50px;
+        }
+        
+        .box,
+        .box::before,
+        .box::after {
+            content: "";
+            width: 100%;
+            height: 10px;
+            background-color: white;
+            position: absolute;
+        }
+        
+        .box:before,
+        .box:after {
+            content: "";
+        }
+        
+        .box {
+            top: 50%;
+        }
+        .box:before {
+            top: -30px;
+        }
+        .box:after {
+            top: 30px;
+
+        }
+        
+        .toggle {
+            transition: transform 1s linear;
+        }
+
+        .toggle:checked ~ .box:after {
+            transform: rotate(225deg) translateY(40px)
+        }
+        .toggle:checked ~ .box:before {
+            transform: rotate(135deg) translateY(-40px)
+        }
+        .toggle:checked ~ .box {
+            background: var(--hamberger-bg)
+        }
+        .toggle {
+            opacity: 0;
+        }
+
+    </style>
+</head>
+
+<body class="table h_scene">
+    <header class="t_row">
+        <div class="t_cell">
+            <h1>햄버거 만들기</h1>
+        </div>
+    </header>
+    <content class="t_row">
+        <div class="t_cell">
+            <div id="ex">
+                <div id="content">
+                    <label for="hcb1">
+                        <div id="title">
+                            <span>My hamberger</span>
+                        </div>
+                        <div id="ani_container">
+                            <input class="toggle" type="checkbox" id="hcb1">
+                            <div class="box"></div>
+                        </div>
+                    </label>
+                </div>
+                <!--
+                <ol>
+                    <li>coffee</li>
+                    <li class="new-sign">sandwich</li>
+                    <li>fruit</li>
+                    <li class="new-sign">tea</li>
+                </ol>
+                <div class="box"></div>
+                <div class="after">
+                    <input type="checkbox">
+                </div>
+-->
+            </div>
+        </div>
+    </content>
+    <footer class="t_row">
+        <div class="t_cell">
+            <hr>
+            <p>
+                <button type="button" onclick="location.href='index.html'" value="홈으로">HOME</button>
+            </p>
+        </div>
+    </footer>
+    </footer>
+</body>
+
+</html>
