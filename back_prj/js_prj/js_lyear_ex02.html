@@ -16,23 +16,13 @@
 <body class="table h_scene">
     <header class="t_row">
         <div class="t_cell">
-            <h1 >title</h1>
+            <h1>title</h1>
         </div>
     </header>
     <content class="t_row">
         <div class="t_cell">
-            <div>
-                <p><a href="./js_easy_ex01.html">예제1 - 일단 JS 쉬운 예제 01</a></p>
-                <p><a href="./js_easy_ex02.html">예제2 - 일단 JS 쉬운 예제 02</a></p>
-                <p><a href="./js_easy_ex03.html">예제3 - 일단 JS 쉬운 예제 03</a></p>
-            </div>
-            <div>
-                <hr>
-                <h4>좀 더 올려서...</h4>
-                <p><a href="./js_timef_ex01.html">예제1 - 타이머 간단간단 만들기</a></p>
-                <p><a href="./js_lyear_ex02.html">예제2 - 윤년구하기</a></p>
-            </div>
-            
+            <h3>현재 연도는 윤년일까요?;;</h3>
+            <p id="ans"></p>
         </div>
     </content>
     <footer class="t_row">
@@ -43,6 +33,14 @@
         </p>
        </div>
     </footer>
+    <script>
+        let date = new Date();
+        let year = date.getFullYear();
+
+        let checklyear = ( ( year % 100 != 0 && year % 4 == 0 ) || ( year % 4 != 0 && year % 100 == 0 ) || ( year % 400 == 0 ) ) ? "윤년입니다." : "윤년이 아닙니다."
+
+        document.getElementById("ans").innerText = checklyear;
+    </script>
 </body>
 
 </html>

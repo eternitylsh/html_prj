@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TimerEx</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="../css/init.css">-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <style type="text/css">
+        #ex pre {
+            max-height: 500px;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+
+<body class="table h_scene">
+    <header class="t_row">
+        <div class="t_cell">
+            <h1>그냥 바로 타이머 안내 만들기</h1>
+        </div>
+    </header>
+    <content class="t_row">
+        <div class="t_cell">
+            <div id="ex">
+                <span id="year"></span>&nbsp;년&nbsp;|&nbsp;
+                <span id="month"></span>&nbsp;월&nbsp;|&nbsp;
+                <span id="day"></span>&nbsp;일&nbsp;|&nbsp;
+                <span id="weekend"></span>&nbsp;요일&nbsp;|&nbsp;
+                <span id="t_area"></span>&nbsp;|&nbsp;
+                <span id="hours"></span>&nbsp;시&nbsp;|&nbsp;
+                <span id="minute"></span>&nbsp;분&nbsp;|&nbsp;
+                <span id="second"></span>&nbsp;초
+                <hr>
+                <pre>
+                    const setClock = () => {
+                        let date = new Date();
+                        let datearr = [ date.getFullYear(), (date.getMonth() + 1), date.getDate(), date.getDay(), date.getHours(), date.getMinutes(), date.getSeconds() ];
+
+                        let arrid = ["year", "month", "day", "weekend", "hours", "minute", "second"]
+                        let days = ["일", "월", "화", "수", "목", "금", "토"]
+                        let houridx = 4
+                        let weekendidx = 3
+
+
+                        let target = document.getElementById("t_area")
+                        target.innerText = (12 > datearr[houridx]) ? '오전' : '오후'
+                        for( let i = 0; i < arrid.length; i++) {
+                            let values = datearr[i]
+                            target = document.getElementById(arrid[i])
+                            target.innerText = ( houridx === i ) ? ( ( 12 > values ) ? values : values - 12 ) : ( ( weekendidx === i ) ? days[values] : values );
+                        }
+                    }
+
+                    const Call_Season = () => {
+                        let idate = new Date();
+                        let month = (idate.getMonth() + 1); // 1 : monthidx
+                        let alert_val = ( 3 <= month && 5 >= month ) ? '봄의 계절' : ( 6 <= month && 8 >= month ) ? '여름의 계절' : ( 9 <= month && 11 >= month ) ? '가을의 계절' : ( 12 <= month && 2 >= month ) ? '겨울의 계절' : -1;
+                        if ( 0 < month ) {
+                            alert( alert_val );
+                        }
+                    }
+
+                    document.getElementById("season_check").addEventListener("click", Call_Season);
+
+                    
+
+                    window.onload = () => {
+                        setClock();
+                        setInterval(setClock, 1000);
+                    }
+                </pre>
+                <button id="season_check">계절확인</button>
+            </div>
+        </div>
+    </content>
+    <footer class="t_row">
+       <div class="t_cell">
+        <hr>
+        <p>
+            <button type="button" onclick="location.href='index.html'" value="홈으로" >HOME</button>
+        </p>
+       </div>
+    </footer>
+    <script type="text/javascript">
+        const setClock = () => {
+            let date = new Date();
+            let datearr = [ date.getFullYear(), (date.getMonth() + 1), date.getDate(), date.getDay(), date.getHours(), date.getMinutes(), date.getSeconds() ];
+
+            let arrid = ["year", "month", "day", "weekend", "hours", "minute", "second"]
+            let days = ["일", "월", "화", "수", "목", "금", "토"]
+            let houridx = 4
+            let weekendidx = 3
+
+
+            let target = document.getElementById("t_area")
+            target.innerText = (12 > datearr[houridx]) ? '오전' : '오후'
+            for( let i = 0; i < arrid.length; i++) {
+                let values = datearr[i]
+                target = document.getElementById(arrid[i])
+                target.innerText = ( houridx === i ) ? ( ( 12 > values ) ? values : values - 12 ) : ( ( weekendidx === i ) ? days[values] : values );
+            }
+        }
+
+        const Call_Season = () => {
+            let idate = new Date();
+            let month = (idate.getMonth() + 1); // 1 : monthidx
+            let alert_val = ( 3 <= month && 5 >= month ) ? '봄의 계절' : ( 6 <= month && 8 >= month ) ? '여름의 계절' : ( 9 <= month && 11 >= month ) ? '가을의 계절' : ( 12 <= month && 2 >= month ) ? '겨울의 계절' : -1;
+            if ( 0 < month ) {
+                alert( alert_val );
+            }
+        }
+
+        document.getElementById("season_check").addEventListener("click", Call_Season);
+
+        
+
+        window.onload = () => {
+            setClock();
+            setInterval(setClock, 1000);
+        }
+
+        
+        
+    </script>
+</body>
+
+</html>
