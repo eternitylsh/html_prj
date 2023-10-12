@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>root사용법</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="../css/init.css">-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        :root {
+            --bg-1a: #52ee6c;
+            --bg-1b: #e3450b;
+            --bg-1c: #7ef5e5;
+            --bg-1d: #e1f3b9;
+            --bg-1e: #1d789f;
+            
+            --bg-2a: #30c213;
+            --bg-2b: #2497a2;
+            --bg-2c: #e675ea;
+            --bg-2d: #bae1e8;
+            --bg-2e: #1d9f25;
+            
+            --bg-3a: #581d62;
+            --bg-3b: #0f4d9d;
+            --bg-3c: #91d471;
+            --bg-3d: #afdfe8;
+            --bg-3e: #5c1d9f;
+        }
+        
+        header { height: 8%; }
+        
+        #ex {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 90%;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        
+        #ex .c1, #ex .c2, #ex .c3 {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #ex div div {
+            margin: 20px;
+            width: 100%;
+/*            background-color: aqua;*/
+        }
+        
+        #ex .c1 {
+            background-color: var(--bg-1e)
+        }
+        #ex .c2 {
+            background-color: var(--bg-2e)
+        }
+        #ex .c3 {
+            background-color: var(--bg-3e)
+        }
+        
+        #ex .c1 div:first-child {
+            background-color:  var(--bg-1a)
+        }
+        
+        #ex .c1 div:nth-child(2n) {
+            background-color:  var(--bg-1b)
+        }
+        
+        #ex .c1 div:nth-child(3n) {
+            background-color:  var(--bg-1c)
+        }        
+        #ex .c1 div:nth-last-child(2) {
+            background-color:  var(--bg-1d)
+        }
+        
+        #ex .c2 div:first-child {
+            background-color:  var(--bg-2a)
+        }
+        
+        #ex .c2 div:nth-child(2n) {
+            background-color:  var(--bg-2b)
+        }
+        
+        #ex .c2 div:nth-child(3n) {
+            background-color:  var(--bg-2c)
+        }        
+        #ex .c2 div:nth-last-child(2) {
+            background-color:  var(--bg-2d)
+        }
+        
+        #ex .c3 div:first-child {
+            background-color:  var(--bg-3a)
+        }
+        
+        #ex .c3 div:nth-child(2n) {
+            background-color:  var(--bg-3b)
+        }
+        
+        #ex .c3 div:nth-child(3n) {
+            background-color:  var(--bg-3c)
+        }        
+        #ex .c3 div:nth-last-child(2) {
+            background-color:  var(--bg-3d)
+        }
+    </style>
+</head>
+
+<body class="table h_scene">
+    <header class="t_row">
+        <div class="t_cell">
+            <h1>root속성이란?</h1>
+        </div>
+    </header>
+    <content class="t_row">
+        <div class="t_cell">
+            <div id="ex">
+                <div class="c1">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="c2">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="c3">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </content>
+    <footer class="t_row">
+       <div class="t_cell">
+        <hr>
+        <p>
+            <button type="button" onclick="location.href='index.html'" value="홈으로" >HOME</button>
+        </p>
+       </div>
+    </footer>
+</body>
+
+</html>

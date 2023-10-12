@@ -4,34 +4,46 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>예제 목차</title>
+    <title>중앙배치_Calc예시</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
     <!--    <link rel="stylesheet" href="../css/init.css">-->
     <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        header { height: 10%; }
+        #ex { height: 100%; }
+        .rec {
+            background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            
+            position: relative;
+            left: calc(50% - 50px);
+            top: calc(50% - 50px);
+        }
+    </style>
 </head>
 
 <body class="table h_scene">
     <header class="t_row">
         <div class="t_cell">
-            <h1>Note3 실습 예제 목차</h1>
+            <h1>객체를 정중앙배치 하는 방법</h1>
         </div>
     </header>
     <content class="t_row">
         <div class="t_cell">
-            <p><a href="./n03_01.html">실습예시01 - 홈페이지 순서대로 제작01</a></p>
-            <p><a href="./n03_02.html">실습예시02 - 햄버거 만들기</a></p>
-            <p><a href="./n03_03.html">실습예시03 - 개인프로필 제작</a></p>
-            <p><a href="./n03_04/index.html">실습예시04 - 디지털 극장 로그인 홈페이지</a></p>
+            <div id="ex">
+                <div class="rec"></div>
+            </div>
         </div>
     </content>
     <footer class="t_row">
        <div class="t_cell">
         <hr>
         <p>
-            <button type="button" onclick="location.href='../index.html'" value="홈으로" >HOME</button>
+            <button type="button" onclick="location.href='index.html'" value="홈으로" >HOME</button>
         </p>
        </div>
     </footer>

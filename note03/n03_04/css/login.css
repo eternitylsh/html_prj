@@ -1,0 +1,87 @@
+html, body {
+    overflow: hidden;
+}
+
+
+.login-title {
+    width: 100%;
+    text-align: center;
+}
+
+.login-title__maintext {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 10px var(--purple);
+    color: var(--purple)
+}
+
+.login-title__subtext {
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+.login-form {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    border-radius: 5px;
+}
+
+.login-form input {
+    padding: 15px 0;
+    margin: none;
+    border: 10px;
+    outline: none;
+    appearance: none;
+    background-color: var(--background-purple);
+    font-size: 1em;
+}
+.login-form input:not([type="submit"]) {
+    color: white;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.3s ease-in-out;
+}
+
+.login-form input:focus {
+    border-color: white;
+}
+
+.login-form input[type="submit"] {
+    color: white;
+    background-color: var(--darkpurple);
+    border-radius: 20px;
+    margin-top: 2rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.login-form input[type="submit"]:active {
+    background-color: var(--purple);
+}
+
+/* 나중에 수정.. */
+#login-img { 
+    background-image: url("../res/mlist.jpg");
+    position: fixed;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
+}
+
+#login-img2 {
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.3), var(--background-purple-alpha) 50%);
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    top:150px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}

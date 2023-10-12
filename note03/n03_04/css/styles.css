@@ -1,0 +1,48 @@
+/*
+header h1 {
+    border-bottom: 3px solid black;
+    padding: 26px;
+    
+    font-family: 'Hi Melody', cursive; 
+    font-size: 3em
+}
+
+button {
+    font-family: 'Orbit', sans-serif; 
+    width: 100px;
+}*/
+
+@import "./reset.css";
+@import "./variable.css";
+@import "./login.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Orbit", sans-serif;
+    background-color: var(--background-purple);
+    color: white;
+}
+
+input {
+    border: none;
+    outline: none;
+    appearance: none;
+}
+
+#home {
+    margin-top: 100px;
+    width: 20%;
+    height: 5%;
+    color: white;
+    background-color: var(--darkpurple);
+    border-radius: 20px;
+    margin-top: 2rem;
+    transition: background-color 0.05s ease-in-out;
+}
+
+#home:active {
+    background-color: var(--purple);
+}
