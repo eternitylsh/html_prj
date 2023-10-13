@@ -2,9 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Theater_Find</title>
 </head>
+
 <body>
-    <h1>ok!</h1>
-</body>
-</html>
+    <form action="" method="GET" class="find-search-bar-form">
+        <div class="display-flex-center position-relative">
+            <input type="text" id="search-input" class="find-search-bar" placeholder="검색하기">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+        </div>
+    </form>
+    <div class="best-movie position-relative">
+        <div class="best-movie__img-container">
+            <img src="./res/the_creator.jpg" alt="" class="best-movie__img">
+            <button type="button">
+                <span id="pv_play" class="material-symbols-outlined btn">
+                play_arrow
+                </span>
+            </button>
+        </div>
+        <div class="best-movie__title">
+            <p class="best-movie__promotion-text">지금 가장 핫한 작품은?</p>
+            <span class="best-movie__movie-name">The Creator</span>
+        </div>
+    </div>
+    <div class="movie-recommendation">
+        <span class="movie-recommendation__title">다른 작품 보기 ></span>
+        <ul class="movie-recommendation__images">
+            <li><img src="./res/openhimer.jpg" alt=""></li>
+            <li><img src="./res/1917.jpg" alt=""></li>
+            <li><img src="./res/gog3.jpg" alt=""></li>
+            <li><img src="./res/The_Moon.jpg" alt=""></li>
+            <li><img src="./res/Antman_Wasp.jpg" alt=""></li>
+            <li><img src="./res/JungI.jpg" alt=""></li>
+        </ul>
+    </div>
+    <div class="navigation-bar">
+        <a href="#">
+          <span class="material-symbols-outlined find-icon-clicked">
+                search
+          </span>  
+        </a>
+        <a href="./mypage.html">
+            <span class="material-symbols-outlined">
+            person
+            </span>
+        </a>
+    </div>
+    <div class="find-footer">
+       <button type="button" onclick="location.href='./index.html'" value="로그아웃" id="home">LogOut</button>
+        <button type="button" onclick="location.href='../index.html'" value="홈으로" id="home">HOME</button>
+    </div>
+    <script type="text/javascript" src="./js/search.js"></script>
+    <script type="text/javascript" src="./js/find-play.js"></script>
+</body></html>
