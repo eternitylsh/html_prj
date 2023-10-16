@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>adv_lightbox</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="../css/init.css">-->
+    <link rel="stylesheet" href="./lightbox/css/jquery.lightbox.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./lightbox/js/jquery.lightbox.js"></script>
+    <style type="text/css">
+        #ex #card-container {
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            height: 18rem;
+        }
+        #card-container .card {
+            background-color: antiquewhite;
+            padding: 0.3rem;
+            margin: 0.1rem;
+            border-radius: 0.5rem;
+        }
+
+        #card-container img {
+            width: 19rem;
+            margin: 0.5rem;
+            border-radius: 1rem;
+
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(() => {
+            $('a.light').lightBox();
+        })
+    </script>
+</head>
+
+<body class="table h_scene">
+    <header class="t_row">
+        <div class="t_cell">
+            <h1>라이트박스 응용에 관해.</h1>
+        </div>
+    </header>
+    <content class="t_row">
+        <div class="t_cell">
+            <div id="ex">
+                <div id="card-container">
+                    <div class="card">
+                        <a href="./lightbox/photos/image1.jpg" class="light">
+                            <img src="./lightbox/photos/image1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="./lightbox/photos/image2.jpg" class="light">
+                            <img src="./lightbox/photos/image2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="./lightbox/photos/image3.jpg" class="light">
+                            <img src="./lightbox/photos/image3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="./lightbox/photos/image4.jpg" class="light">
+                            <img src="./lightbox/photos/image4.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </content>
+    <footer class="t_row">
+        <div class="t_cell">
+            <hr>
+            <p>
+                <button type="button" onclick="location.href='index.html'" value="홈으로">HOME</button>
+            </p>
+        </div>
+    </footer>
+</body></html>
