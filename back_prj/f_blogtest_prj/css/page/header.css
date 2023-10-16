@@ -1,0 +1,18 @@
+#main-header {
+    padding: 40px 50px;
+}
+
+/*        
+margin : 위 오른쪽 아래쪽 왼쪽 < 4요소
+margin : 위아래 좌우 < 2요소
+margin : 전체
+*/
+
+.master-title {
+    font-size: 30px;
+    color: #181818;
+}
+.master-decription {
+    font-size: 15px;
+    color: #383838;
+}
