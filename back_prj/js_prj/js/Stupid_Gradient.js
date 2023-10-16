@@ -1,4 +1,4 @@
-
+// jquery로...
 
 window.onload = function() {
 	let output = '';
@@ -17,7 +17,6 @@ window.onload = function() {
 	for(i = 0; i < divs.length; i++ ) {
 		let newdiv = divs[i];
 		newdiv.style.height = '2px';
-		let nowcolorbit = ( i  );
 		newdiv.style.backgroundColor = `rgb( ${i}, ${i}, ${i} )`;
 	}
 }

@@ -1,10 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>mypage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>my page</title>
 </head>
+
 <body>
-    <h1>introduce mypage~</h1>
-</body>
-</html>
+    <div class="display-flex-center">
+        <div class="user-component position-relative display-flex-center">
+            <img src="./res/mypage.JPG" alt="" class="user-component__profile">
+            <div class="user-component__id">E Creator</div>
+        </div>
+        <div class="user-component">
+            <div class="user-component__profile add-profile-btn display-flex-center">
+                <span>+</span>
+            </div>
+            <div class="user-component__id">새 프로필</div>
+        </div>
+    </div>
+    <div class="continue-watching">
+        <p class="continue-watching__header">이어보기</p>
+        <ul class="continue-watching__imges">
+            <li>
+                <div class="continue-watching__card"><img src="./res/suzume_no_tojimari.jpg" alt=""><span class="continue-watching__title">스즈메의 문단속</span></div>
+            </li>
+            <li>
+                <div class="continue-watching__card"><img src="./res/totoro.jpg" alt=""><span class="continue-watching__title">토토로</span></div>
+            </li>
+            <li>
+                <div class="continue-watching__card"><img src="./res/coenokatachi.jpg" alt=""><span class="continue-watching__title">목소리의 형태</span></div>
+            </li>
+            <li>
+                <div class="continue-watching__card"><img src="./res/elemental.jpg" alt=""><span class="continue-watching__title">엘리멘탈</span></div>
+            </li>
+        </ul>
+    </div>
+    <div class="wishlist">
+        <p class="wishlist__header"></p>
+        <div class="wishlist-container">
+            <!--      아이템 1     -->
+            <div class="wishlist-item">
+                <div>
+                    <img src="./res/suzume_no_tojimari__neco.png" alt="" class="wishlist__img">
+                </div>
+                <div class="wishlist-info">
+                    <span class="wishlist__title">스즈메의 문단속</span>
+                    <span class="wishlist__subtitle">신카이 마코토</span>
+                </div>
+                <div class="wishlist-play-btn">
+                    <span class="material-symbols-outlined btn">
+                        play_arrow
+                    </span>
+                </div>
+            </div>
+
+            <!--      아이템 2     -->
+            <div class="wishlist-item">
+                <div>
+                    <img src="./res/openhimer_poster1.jpg" alt="" class="wishlist__img">
+                </div>
+                <div class="wishlist-info">
+                    <span class="wishlist__title">오펜하이머</span>
+                    <span class="wishlist__subtitle">놀란 감독</span>
+                </div>
+                <div class="wishlist-play-btn">
+                    <span class="material-symbols-outlined btn">
+                        play_arrow
+                    </span>
+                </div>
+            </div>
+
+            <!--      아이템 3     -->
+            <div class="wishlist-item">
+                <div>
+                    <img src="./res/the_creator_poster.png" alt="" class="wishlist__img">
+                </div>
+                <div class="wishlist-info">
+                    <span class="wishlist__title">더 크리에이터</span>
+                    <span class="wishlist__subtitle">심오하고 함정이 많은..</span>
+                </div>
+                <div class="wishlist-play-btn">
+                    <span class="material-symbols-outlined btn">
+                        play_arrow
+                    </span>
+                </div>
+            </div>
+
+            <div class="wishlist-item">
+                <div>
+                    <img src="./res/flip's_patema.jpg" alt="" class="wishlist__img">
+                </div>
+                <div class="wishlist-info">
+                    <span class="wishlist__title">거꾸로된 파테마</span>
+                    <span class="wishlist__subtitle">요시우라 야스히로 감독</span>
+                </div>
+                <div class="wishlist-play-btn">
+                    <span class="material-symbols-outlined btn">
+                        play_arrow
+                    </span>
+                </div>
+            </div>
+
+            <div class="wishlist-item">
+                <div>
+                    <img src="./res/avartar_water.jpg" alt="" class="wishlist__img">
+                </div>
+                <div class="wishlist-info">
+                    <span class="wishlist__title">아바타 물의길</span>
+                    <span class="wishlist__subtitle">제임스 카메론 작품</span>
+                </div>
+                <div class="wishlist-play-btn">
+                    <span class="material-symbols-outlined btn">
+                        play_arrow
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation-bar">
+        <a href="./find.html">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+        </a>
+        <a href="#">
+            <span class="material-symbols-outlined find-icon-clicked">
+                person
+            </span>
+        </a>
+    </div>
+
+</body></html>

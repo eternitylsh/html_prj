@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jq_ex01</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Orbit&display=swap" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="../css/init.css">-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+
+<body class="table h_scene">
+    <header class="t_row">
+        <div class="t_cell">
+            <h1>jquery 예시 01</h1>
+        </div>
+    </header>
+    <content class="t_row">
+        <div class="t_cell">
+            <div id="ex">
+                <h1>header</h1>
+                <h2></h2>
+                
+                <img src="" alt="">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+    </content>
+    <footer class="t_row">
+        <div class="t_cell">
+            <hr>
+            <p>
+                <button type="button" onclick="location.href='index.html'" value="홈으로">HOME</button>
+            </p>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(e => {
+            let path = $('script').attr('src');
+            $('#ex h1').css('color', 'red')
+            $('#ex h1').css('background-color', 'black')
+            
+            $('#ex h2').innerText = path;
+            $('#ex img').attr({ 
+                    src: 'http://placehold.it/300x250',
+                    width: 300,
+                    height: 200
+                }
+            )
+            $('.box').css('background-color', 'red');
+            $('.box').css('float', 'left')
+            $('.box').css('margin', 10);
+            $('.box').css('width', 100);
+            $('.box').css('height', 100);
+        });
+    </script>
+</body></html>

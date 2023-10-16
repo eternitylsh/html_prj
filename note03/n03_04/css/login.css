@@ -61,6 +61,8 @@ html, body {
 /* 나중에 수정.. */
 #login-img { 
     background-image: url("../res/mlist.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     position: fixed;
     z-index: -3;
     width: 100%;

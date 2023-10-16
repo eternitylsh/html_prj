@@ -17,6 +17,7 @@ button {
 @import "./login.css";
 @import "./navigation-bar.css";
 @import "./find.css";
+@import "./mypage.css";
 
 * {
     box-sizing: border-box;
